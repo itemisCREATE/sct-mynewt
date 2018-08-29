@@ -11,7 +11,7 @@
             executor="org.yakindu.sct.generator.core.execution.SExecGeneratorEntryExecutor"
             icon="icons/sct.png"
             id="yakindu::mynewt"
-            name="YAKINDU SCT MyNewt Code Generator">
+            name="YAKINDU SCT MyNewt C Code Generator">
             <Domain
                   id="org.yakindu.domain.default">
             </Domain>
