@@ -27,6 +27,3 @@ pkg.keywords:
 pkg.deps:
     - "apps/cdomain"
     - "@apache-mynewt-core/test/testutil"
-
-pkg.deps.SELFTEST:
-    - "@apache-mynewt-core/sys/console/stub"
