@@ -1,0 +1,9 @@
+GeneratorModel for yakindu::mynewt {
+	statechart SimpleSct {
+
+		feature Outlet {
+			targetProject = "com.yakindu.sct.generator.mynewt.test"
+			targetFolder = "mynewt/sct_tests/apps/simple/src"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+GeneratorModel for yakindu::mynewt {
+	statechart CDomain {
+		feature Outlet {
+			targetProject =  "com.yakindu.sct.generator.mynewt.test" 
+			targetFolder =  "mynewt/sct_tests/apps/cdomain/src" 
+		}
+		
+	}
+}
