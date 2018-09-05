@@ -1,0 +1,30 @@
+GeneratorModel for yakindu::mynewt {
+
+	statechart SimpleMachine {
+
+		feature Outlet {
+			targetProject = "mynewt-tests"
+			targetFolder = "sct_tests/apps/test/src/sm"
+			libraryTargetFolder = "sct_tests/apps/test/src/smlib"
+		}
+	}
+	
+	statechart InternalEventMachine {
+		
+		feature Outlet {
+			targetProject = "mynewt-tests"
+			targetFolder = "sct_tests/apps/test/src/sm"
+			libraryTargetFolder = "sct_tests/apps/test/src/smlib"
+		}
+	}
+
+	statechart TimedMachine {
+		
+		feature Outlet {
+			targetProject = "mynewt-tests"
+			targetFolder = "sct_tests/apps/test/src/sm"
+			libraryTargetFolder = "sct_tests/apps/test/src/smlib"
+		}
+	}
+	
+}
