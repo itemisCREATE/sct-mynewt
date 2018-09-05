@@ -1,0 +1,35 @@
+GeneratorModel for yakindu::mynewt {
+	
+	statechart blinklight {
+		
+		feature Outlet {
+			targetProject =  "mynewt-tests" 
+			targetFolder =  "sct_tests/apps/direction_blinker/src/sm" 
+			libraryTargetFolder =  "sct_tests/apps/direction_blinker/src/smlib" 
+			skipLibraryFiles = false
+		}	
+	}
+
+
+	statechart directionblinker {
+		
+		feature Outlet {
+			targetProject =  "mynewt-tests" 
+			targetFolder =  "sct_tests/apps/direction_blinker/src/sm" 
+			libraryTargetFolder =  "sct_tests/apps/direction_blinker/src/smlib" 
+			skipLibraryFiles = false
+		}	
+	}
+
+
+	statechart driver {
+		
+		feature Outlet {
+			targetProject =  "mynewt-tests" 
+			targetFolder =  "sct_tests/apps/direction_blinker/src/sm" 
+			libraryTargetFolder =  "sct_tests/apps/direction_blinker/src/smlib" 
+			skipLibraryFiles = false
+		}	
+	}
+
+}
