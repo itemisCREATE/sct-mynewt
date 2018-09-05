@@ -8,6 +8,7 @@ import org.yakindu.sct.model.sexec.extensions.SExecExtensions
 import org.yakindu.sct.model.sgen.GeneratorEntry
 import org.yakindu.sct.generator.core.types.ICodegenTypeSystemAccess
 import org.yakindu.sct.generator.c.extensions.EventNaming
+import org.yakindu.sct.mynewt.generator.c.files.TimerServiceHeader
 
 class MyNewtHeaderFragment implements IHeaderFragment {
 	@Inject protected extension SExecExtensions
@@ -16,6 +17,7 @@ class MyNewtHeaderFragment implements IHeaderFragment {
 	@Inject protected extension EventNaming
 	@Inject protected extension MyNewtNaming
 	@Inject protected extension MyNewtStatechartTypes
+	@Inject protected extension TimerServiceHeader timerService
 	
 	override defines(ExecutionFlow it, GeneratorEntry entry, IGenArtifactConfigurations artifactConfigs) {
 		'''
@@ -37,8 +39,11 @@ class MyNewtHeaderFragment implements IHeaderFragment {
 		'''
 	}
 	
-	override includes(ExecutionFlow flow, GeneratorEntry entry, IGenArtifactConfigurations artifactConfigs) {
+	override includes(ExecutionFlow flow, GeneratorEntry entry, extension IGenArtifactConfigurations artifactConfigs) {
 		'''
+			«IF flow.timed»
+				#include "«(timerService.module.h).relativeTo(flow.module.h)»"
+			«ENDIF»
 			#include "os/os_eventq.h"
 			#include "os/os_mempool.h"
 		'''

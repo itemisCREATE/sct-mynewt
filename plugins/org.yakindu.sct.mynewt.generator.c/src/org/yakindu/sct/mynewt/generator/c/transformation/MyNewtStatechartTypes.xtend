@@ -10,6 +10,9 @@ class MyNewtStatechartTypes extends EventDrivenStatechartTypes {
 	override statemachineStructContent(ExecutionFlow it) {
 		'''
 			«super.statemachineStructContent(it)»
+			«IF timed»
+				sc_ts_connection_t *ts_conn;
+			«ENDIF»
 			struct os_eventq *queue;
 			struct os_mempool *pool;
 		'''

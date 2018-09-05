@@ -49,6 +49,7 @@ class MyNewtEventCode extends EventDrivenEventCode {
 				«type.targetLanguageName» value = e->value.«eventValueUnionMemberName»;
 			«ENDIF»
 			«super.interfaceIncomingEventRaiserBody(flow, it)»
+			os_memblock_put(handle->pool, osev);
 		'''
 	}
 	
