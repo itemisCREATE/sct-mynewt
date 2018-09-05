@@ -1,0 +1,14 @@
+GeneratorModel for yakindu::mynewt {
+	
+	statechart  blink {
+		
+		feature Outlet {
+			targetProject =  "mynewt-tests" 
+			targetFolder =  "sct_tests/apps/blinky/src" 
+			libraryTargetFolder =  "sct_tests/apps/blinky/src" 
+			apiTargetFolder = "sct_tests/apps/blinky/src"
+			skipLibraryFiles = false
+		}
+		
+	}
+}
