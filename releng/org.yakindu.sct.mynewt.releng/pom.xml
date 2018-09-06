@@ -5,8 +5,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.yakindu.sct</groupId>
-	<artifactId>org.yakindu.sct.mynewt.generator</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>org.yakindu.sct.mynewt.releng</artifactId>
+	<version>3.4.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
 		<tycho-version>1.2.0</tycho-version>
@@ -20,6 +20,9 @@
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
+			<properties>
+				<xtext-version>2.14.0</xtext-version>
+			</properties>
 			<build>
 				<plugins>
 					<plugin>
@@ -70,7 +73,7 @@
 		<module>../org.yakindu.sct.mynewt.target</module>
 		<module>../org.yakindu.sct.mynewt.repository</module>
 		<!-- plugins -->
-		<module>../../org.yakindu.sct.mynewt.generator.c</module>
+		<module>../../plugins/org.yakindu.sct.mynewt.generator.c</module>
 		<!-- features -->
 		<module>../../features/org.yakindu.sct.mynewt.generator.feature</module>
 	</modules>

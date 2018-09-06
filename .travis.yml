@@ -1,0 +1,11 @@
+sudo: false
+language: java
+dist: precise
+jdk: 
+ - oraclejdk8
+cache:
+  directories:
+  - $HOME/.m2
+script:
+- cd releng/org.yakindu.sct.mynewt.releng
+- mvn clean verify
