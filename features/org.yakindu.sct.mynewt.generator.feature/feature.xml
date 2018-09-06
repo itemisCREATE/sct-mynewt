@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.yakindu.sct.mynewt.generator.feature"
+      label="Apache Mynewt Code Generator"
+      version="3.4.0.qualifier"
+      provider-name="itemis AG">
+
+ <description url="http://www.statecharts.org">
+      %description
+   </description>
+
+   <copyright url="%licenseURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <discovery label="YAKINDU SCT Repository" url="http://updates.yakindu.com/statecharts/releases/"/>
+   </url>
+
+   <requires>
+      <import feature="org.yakindu.sct" version="3.4.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="org.yakindu.sct.mynewt.generator.c"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+</feature>

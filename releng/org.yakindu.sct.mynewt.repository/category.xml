@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.yakindu.sct.mynewt.generator.feature_3.4.0.qualifier.jar" id="org.yakindu.sct.mynewt.generator.feature" version="3.4.0.qualifier">
+      <category name="YAKINDU Statechart Tools"/>
+   </feature>
+   <category-def name="YAKINDU Statechart Tools" label="YAKINDU Statechart Tools"/>
+</site>
